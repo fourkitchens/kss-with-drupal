@@ -1,0 +1,43 @@
+// Callout Blocks
+//
+// .paragraph--callout--blue - Capitalize text. Intended to be used for submit buttons.
+// .paragraph--callout--grey - Capitalize text. Intended to be used for submit buttons.
+//
+//  Markup: ../../../components/paragraphs/callout.twig
+//
+// Style guide: styles.callout
+//
+
+.paragraph--type--callout {
+  float: right;
+  width: 220px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .paragraph--callout--content {
+    padding: 2em;
+  }
+}
+
+.paragraph--callout--grey {
+  background-color: #E3E3E3;
+}
+
+.paragraph--callout--blue {
+  background-color: #0073E6;
+
+  h3, p, a {
+    color: white;
+  }
+
+  .field--type-link {
+    .field__item {
+      margin-top: 1em;
+    }
+  }
+
+}

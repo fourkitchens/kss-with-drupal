@@ -1,0 +1,37 @@
+//  Admissions Step blocks
+//
+//  Each step in the admissions process has a paragraph block.
+//
+//  Markup: ../../../components/paragraphs/admission-step.twig
+//
+//  Style guide: styles.paragraphs
+
+.admission-step {
+  margin-bottom: 55px;
+  border-top: 1px solid $color--light-gray;
+
+  .admission-step__due-date {
+    display: block;
+    float: right;
+    margin-bottom: 25px;
+    padding: 7px 25px;
+    font-size: 15px;
+    font-family: $font-family--archer;
+    color: $color--white;
+    background: $color--green;
+
+    label {
+      display: inline;
+      text-transform: uppercase;
+    }
+  }
+
+  .field--name-field-due-date {
+    display: inline;
+  }
+
+  .admission-step__title {
+    margin: 25px 0;
+    clear: both;
+  }
+}

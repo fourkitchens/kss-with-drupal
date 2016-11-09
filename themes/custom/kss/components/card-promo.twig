@@ -1,0 +1,14 @@
+<article 
+  {% if attributes %}
+    {{ attributes.addClass('card-promo') }}
+  {% else %}
+    class="{{ classes }} {{ modifier_class }}"
+  {% endif %}
+>
+  <h2>{{ label }}</h2>
+  {% if content.body %}
+    {{ content.body }}
+  {% else %}
+    {{ body }}
+  {% endif %}
+</article>

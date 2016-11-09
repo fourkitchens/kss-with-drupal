@@ -1,0 +1,11 @@
+{
+  "title": "KSS Style Guide",
+
+  "//": "These are relative to this config file.",
+  "source": "../sass",
+  "builder": "custom-builder-twig",
+  "destination": "../../../../themes/custom/kss/styleguide",
+
+  "//": "'homepage.md' is relative to 'source'",
+  "homepage": "../../../../styleguide-dev/homepage.md"
+}

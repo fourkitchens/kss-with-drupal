@@ -1,0 +1,34 @@
+// Promo Card
+//
+// This promo card is used to promote content on the site.
+//
+// :hover - Hover state for the promo card
+//
+// Markup: ../../components/card-promo.twig
+//
+// Style guide: Card.promo
+//
+.card-promo {
+  border: 1px solid rebeccapurple;
+  border-radius: 3px;
+  max-width: 300px;
+  padding: 20px;
+
+  h2 {
+    margin-top: 0;
+    color: rebeccapurple;
+    font-family: $font-family--garamond; 
+    font-size: 1.5em;
+    text-transform: none;
+  }
+
+  &:hover,
+  &.pseudo-class-hover {
+    border-color: red;
+    color: red;
+
+    h2 {
+      color: red;
+    }
+  }
+}

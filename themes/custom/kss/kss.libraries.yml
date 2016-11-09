@@ -1,0 +1,14 @@
+global:
+  css:
+    theme:
+      dist/css/main.css: {}
+      https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css: { type: external }
+      https://fonts.googleapis.com/css?family=Cormorant+Garamond: { type: external }
+
+bootstrap:
+  version: 3.x
+  js:
+    js/lib/bootstrap-transition.js: {}
+    js/lib/bootstrap-collapse.js: {}
+  dependencies:
+    - core/jquery

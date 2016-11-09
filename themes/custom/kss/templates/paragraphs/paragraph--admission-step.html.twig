@@ -1,0 +1,36 @@
+{#
+/**
+ * Extending the base template for Drupal.
+ */
+#}
+{% extends "@styleguide/paragraphs/admission-step.twig" %}
+
+{#
+/**
+ * Set variables.
+ */
+#}
+{%
+set attributes = attributes.addClass([
+'admission-step',
+'drupal-version',
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+])
+%}
+{% set contentBody = content.field_text %}
+{% set contentTitle = content.field_step_title %}
+{% set contentDueDate = content.field_due_date %}
+{#
+/**
+ * Define dueDate region.
+ */
+#}
+{% block dueDate %}
+  {% if content.field_due_date|render %}
+    <span class="admission-step__due-date"><label>Due:</label> {{ content.field_due_date }}</span>
+  {% endif %}
+{% endblock %}
+
+

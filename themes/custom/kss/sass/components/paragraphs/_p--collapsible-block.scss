@@ -1,0 +1,41 @@
+//  Collapsible block
+//
+//  A large toggle to show and hide content.
+//
+//  Markup: ../../../components/paragraphs/collapsible-block.twig
+//
+//  Style guide: styles.collapsible
+
+.collapsible-block {
+  margin-bottom: $spacer-medium;
+}
+.collapsible-block__title {
+  margin: 0;
+  background-color: $color--light-gray;
+  cursor: pointer;
+  font-size: 1.25em;
+  padding: ($spacer-large + $spacer-xsmall) $spacer-large;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: darken($color--light-gray,3%);
+  }
+
+  .fa {
+    display: none;
+    color: $color--blue;
+  }
+  &[aria-expanded="true"] .contract {
+    display: inline-block;
+  }
+  &[aria-expanded="false"] .expand {
+    display: inline-block;
+  }
+  .toggle-controls {
+    float: right;
+  }
+}
+
+.collapsible-block__content {
+  padding: $spacer-small;
+}

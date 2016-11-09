@@ -1,0 +1,18 @@
+kss.small:
+  label: small
+  mediaQuery: 'screen and (min-width: 380px)'
+  weight: 0
+  multipliers:
+    - 1x
+kss.medium:
+  label: medium
+  mediaQuery: 'screen and (min-width: 750px)'
+  weight: 1
+  multipliers:
+    - 1x
+kss.large:
+  label: large
+  mediaQuery: 'screen and (min-width: 1024px)'
+  weight: 2
+  multipliers:
+    - 1x

@@ -1,0 +1,15 @@
+.page-title {
+  font-size:2em;
+}
+
+.kss-modifier__example {
+  margin: $spacer-large 0 0 0;
+  padding-bottom: $spacer-xlarge;
+  border-bottom: 1px solid $color--light-gray;
+}
+
+.kss-modifier__name {
+  display: inline-block;
+  background: $color--light-gray;
+  margin-top: $spacer-xlarge;
+}

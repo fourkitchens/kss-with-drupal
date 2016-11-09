@@ -1,0 +1,50 @@
+// Buttons
+//
+// .button - Default button class.
+// .button--submit - Capitalize text. Intended to be used for submit buttons.
+//
+// Markup: ../../../components/buttons/buttons.twig
+//
+// Style guide: buttons
+//
+
+button,
+button.button,
+a.button {
+  display: inline-block;
+  margin: $spacer-medium 0;
+  padding: $spacer-medium $spacer-large;
+  font-size: 12px;
+  font-family: $font-family--gotham;
+  font-weight: bold;
+  color: $color--black;
+  border: none;
+  background: $color--yellow;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .1s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color--yellow;
+    background: $color--black;
+  }
+
+  & + button,
+  & + button.button,
+  & + a.button {
+    margin-left: $spacer-medium;
+  }
+
+  // Submit
+  &[type="submit"],
+  &.button--submit {
+    text-transform: uppercase;
+  }
+
+  // &.button-green {
+  //   background: green;
+  //   color: #FFF;
+  // }
+}

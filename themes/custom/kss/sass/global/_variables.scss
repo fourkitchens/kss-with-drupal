@@ -1,0 +1,49 @@
+//  ==================================================================
+//  Variables
+//  ==================================================================
+
+//  Colors
+//  ==================================================================
+
+$color--white: #FFFFFF;
+$color--black: #000000;
+$color--light-gray: #E5E5E5;
+$color--medium-gray: #5F605D;
+$color--blue: #0575E3;
+$color--yellow: #FFD200;
+$color--green: #56BC00;
+$color--purple: #57068C;
+$color--light-purple: #7E0ACB;
+$color--dark-purple: #410E67;
+$color--darker-purple: #210338;
+$color--darkest-purple: #140122;
+
+//  Breakpoints
+//  ==================================================================
+
+$break-small: 380px;
+$break-medium: 750px;
+$break-large: 1024px;
+
+
+//  Typography
+//  ==================================================================
+
+$font-family--sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family--serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family--gotham: 'Gotham SSm A', 'Gotham SSm B', $font-family--sans-serif;
+$font-family--archer: 'Archer SSm A', 'Archer SSm B', $font-family--serif;
+$font-family--garamond: 'Cormorant Garamond', $font-family--sans-serif;
+
+$base-font-size: 16; // in pixels
+
+
+//  Spacing
+//  ==================================================================
+
+$spacer: 10px;
+$spacer-xsmall: $spacer*.5;
+$spacer-small: $spacer;
+$spacer-medium: $spacer*2;
+$spacer-large: $spacer*3;
+$spacer-xlarge: $spacer*4;

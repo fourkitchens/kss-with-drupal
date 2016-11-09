@@ -1,0 +1,31 @@
+{#
+/**
+ * Extending the base template for Drupal.
+ */
+#}
+{% extends "@styleguide/paragraphs/callout.twig" %}
+
+{% block attributesRegion %}
+  {%
+  set attributes = attributes.addClass([
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  content.field_background_color['#items'].getValue()|first.value ? 'paragraph--callout--' ~ content.field_background_color['#items'].getValue()|first.value,
+  ])
+  %}
+  {{ attributes }}
+{% endblock %}
+
+{% set image = content.field_header_image %}
+{% set title = content.field_title %}
+{% set text = content.field_text %}
+{% set links = content.field_links %}
+
+{% block imageRegion %}
+  {{ image }}
+{% endblock %}
+
+{% block linksRegion %}
+  {{ links }}
+{% endblock %}

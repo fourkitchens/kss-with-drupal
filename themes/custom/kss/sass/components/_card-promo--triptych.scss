@@ -1,0 +1,16 @@
+// Promo Card Triptych
+//
+// An arrangement of three cards.
+//
+// Markup: ../../components/card-promo--triptych.twig
+// 
+// Style guide: Card.promo.triptych
+//
+.card-triptych-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+
+  .card-promo {
+    margin: 0 10px;
+  }
+}

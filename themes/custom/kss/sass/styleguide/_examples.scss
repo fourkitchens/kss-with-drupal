@@ -1,0 +1,19 @@
+//  This file is for CSS to help with providing examples
+//  in the Style Guide, e.g. a dark background for a
+//  white link.
+.kss-modifier__example .paragraph--type--callout {
+  float: none;
+}
+
+.wrapper-for-link-style--white {
+  background: $color--medium-gray;
+  padding: $spacer-medium;
+}
+
+
+.archer {
+  font-family: $font-family--archer;
+}
+.gotham {
+  font-family: $font-family--gotham;
+}

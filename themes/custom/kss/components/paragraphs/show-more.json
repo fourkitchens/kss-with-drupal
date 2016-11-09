@@ -1,0 +1,8 @@
+{
+  "uniqueID": "uniqueTarget",
+  "title": "This is the Title",
+  "visibleText": "<p>Visible text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc augue, blandit eu turpis eu, viverra malesuada sapien. Donec vestibulum congue nunc ac ultricies. Ut sagittis dui sed mi luctus elementum. Quisque non mi consequat, dictum lorem non, pharetra sem. Phasellus sodales ac arcu nec ultrices. Vestibulum porttitor, turpis a pulvinar pellentesque, mi mi varius odio, non sagittis diam neque et tortor. Nam in bibendum lectus, nec lobortis magna.</p> ",
+  "hiddenText": "<p>Hidden text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc augue, blandit eu turpis eu, viverra malesuada sapien. Donec vestibulum congue nunc ac ultricies. Ut sagittis dui sed mi luctus elementum. Quisque non mi consequat, dictum lorem non, pharetra sem. Phasellus sodales ac arcu nec ultrices. Vestibulum porttitor, turpis a pulvinar pellentesque, mi mi varius odio, non sagittis diam neque et tortor. Nam in bibendum lectus, nec lobortis magna. </p>",
+  "isThereHiddenText": "true",
+  "attributes": " class='paragraph--type--show-more'"
+}

@@ -1,0 +1,21 @@
+{#
+/**
+ * Show More template.
+ */
+#}
+<div{{ attributes }}>
+  <h3 class="paragraph--type--show-more__title">{{ title }}</h3>
+  <div class="paragraph--type--show-more__text">
+    <div class="paragraph--type--show-more__visible-text">{{ visibleText }}</div>
+    <div class="paragraph--type--show-more__hidden-text collapse"
+         id="showMore--{{ uniqueID }}">{{ hiddenText }}</div>
+  </div>
+  {% if isThereHiddenText is not empty %}
+    <a class="show-more link-color--blue--highlight" data-toggle="collapse" href="#showMore--{{ uniqueID }}"
+       aria-expanded="false" aria-controls="showMore--{{ uniqueID }}">
+      <span class="show-more__more-text">Show more</span>
+      <span class="show-more__less-text">Show less</span>
+      <span class="chevron">&#171;</span>
+    </a>
+  {% endif %}
+</div>

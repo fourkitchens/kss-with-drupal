@@ -1,0 +1,58 @@
+//  Show More Paragraph Style
+//
+//  A region that allows for hidden text that is
+//  revealed when a "Show More" button is clicked.
+//
+//  Markup: ../../../components/paragraphs/show-more.twig
+//
+//  Style guide: styles.show-more
+
+.paragraph--type--show-more {
+  padding: 55px 0 $spacer-xlarge 0;
+  border-top: 1px solid $color--light-gray;
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__text {
+    margin-bottom: $spacer-xlarge;
+  }
+
+  .show-more {
+    cursor: pointer;
+    font-size: 14px;
+    font-family: $font-family--gotham;
+
+    &__more-text,
+    &__less-text {
+      vertical-align: baseline;
+    }
+
+    &__less-text {
+      display: none;
+    }
+
+    .chevron {
+      display: inline-block;
+      transform: rotate(.75turn);
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+    // Expanded
+    &[aria-expanded="true"] {
+      .show-more__more-text {
+        display: none;
+      }
+
+      .show-more__less-text {
+        display: inline;
+      }
+
+      .chevron {
+        transform: rotate(.25turn);
+      }
+    }
+  }
+}

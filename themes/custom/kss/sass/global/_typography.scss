@@ -1,0 +1,29 @@
+//  ==================================================================
+//  Typography
+//  ==================================================================
+
+body {
+  @include font-size(16);
+  font-family: $font-family--gotham;
+  padding: 50px;
+}
+
+p {
+  margin: 0 0 $spacer-small;
+  color: $color--medium-gray;
+  font-family: $font-family--gotham;
+  line-height: 1.65em;
+}
+
+//  Headers
+//  ==================================================================
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  @include font-size(20);
+  margin-top: $spacer-xlarge;
+  font-family: $font-family--gotham;
+  text-transform: uppercase;
+}

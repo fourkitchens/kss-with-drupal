@@ -1,0 +1,33 @@
+{
+  "name": "kss",
+  "description": "Drupal 8 and KSS",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "gulp": "gulp",
+    "kss": "./node_modules/.bin/kss --config ./themes/custom/kss/styleguide-dev/styleguide-config.json"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.0",
+    "browser-sync": "^2.11.0",
+    "drupal-sass-breakpoints": "amazingrando/drupal-sass-breakpoints",
+    "eyeglass": "^0.8.3",
+    "glob": "^7.0.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-minify-css": "~1.1.1",
+    "gulp-npm-run": "0.0.3",
+    "gulp-sass": "^2.3.1",
+    "gulp-sass-glob": "^1.0.6",
+    "gulp-sass-lint": "^1.1.1",
+    "gulp-twig": "^0.5.0",
+    "kss": "^3.0.0-beta.14",
+    "lodash": "^3.10.1",
+    "run-sequence": "^1.2.1",
+    "sass-toolkit": "^2.10.0",
+    "singularitygs": "^1.7.0",
+    "sync-exec": "~0.5.0"
+  },
+  "dependencies": {}
+}

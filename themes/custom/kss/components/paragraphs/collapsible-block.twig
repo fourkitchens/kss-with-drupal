@@ -1,0 +1,26 @@
+{#
+/**
+ * Region for attaching libraries in Drupal theme.
+ */
+#}
+{% block attach %}{# empty #}{% endblock %}
+{#
+/**
+ * Collapsible Block template.
+ */
+#}
+<article class="collapsible-block">
+  <h2 class="collapsible-block__title"
+      data-toggle="collapse"
+      data-target="#c{{ uniqueID }}"
+      aria-expanded="false">
+
+      <span class="toggle-controls">
+        <i class="fa fa-plus expand" aria-hidden="true"></i>
+        <i class="fa fa-minus contract" aria-hidden="true"></i>
+      </span>
+
+      {{ contentTitle }}
+  </h2>
+  <div class="collapsible-block__content collapse" id="c{{ uniqueID }}">{{ contentBody }}</div>
+</article>

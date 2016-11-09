@@ -1,0 +1,35 @@
+{#
+/**
+ * Callout template.
+ *
+ * attributesRegion - For applying attributes to the outside container.
+ * imageRegion - For inserting the image
+ * linksRegion - For inserting links
+ */
+#}
+<div{% block attributesRegion %} class="paragraph--type--callout {{ modifier_class }}"{% endblock %}>
+  {% if image %}
+    <div class="callout_header">
+      {% block imageRegion %}
+      <img src="{{ image }}" width="220" height="165" alt="alt" typeof="foaf:Image" class="image-style-medium">
+      {% endblock %}
+    </div>
+  {% endif %}
+
+  <div class="paragraph--callout--content">
+    {% if title %}
+      <h3>{{ title }}</h3>
+    {% endif %}
+    {% if text %}
+      {{ text }}
+    {% endif %}
+    {% if links %}
+      {% block linksRegion %}
+        <div class="field field--name-field-links field--type-link field--label-hidden field__items">
+          <div class="field__item"><a href="http://google.com">Google</a></div>
+          <div class="field__item"><a href="http://fourkitchens.com">Four Kitchens</a></div>
+        </div>
+      {% endblock %}
+    {% endif %}
+  </div>
+</div>

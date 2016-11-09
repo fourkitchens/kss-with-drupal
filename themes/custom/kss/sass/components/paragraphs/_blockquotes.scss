@@ -1,0 +1,18 @@
+// Blockquotes
+//
+// Base styling for blockquotes. As seen on T26:
+// https://projects.invisionapp.com/share/FQ71GFNV2#/screens/152677246
+//
+// Markup: ../../../components/paragraphs/blockquotes.twig
+//
+// Style guide: styles.blockquotes
+blockquote {
+  margin: 40px 0;
+  padding: 0;
+  border: none;
+  color: $color--medium-gray;
+  font-size: 23px;
+  font-family: $font-family--archer;
+  line-height: 1.7em;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+{#
+/**
+ * Admission Steps template.
+ */
+#}
+<div{{ attributes }}>
+  {% block dueDate %}
+    <span class="admission-step__due-date"><label>Due:</label> {{ contentDueDate }}</span>
+  {% endblock %}
+  <h2 class="admission-step__title">{{ contentTitle|raw }}</h2>
+  {{ contentBody|raw }}
+</div>

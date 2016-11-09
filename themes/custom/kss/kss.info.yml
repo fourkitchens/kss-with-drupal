@@ -1,0 +1,22 @@
+name: KSS Test Theme
+type: theme
+description: Theme for testing out KSS integration.
+package: Other
+core: 8
+libraries:
+  - kss/global
+  - kss/bootstrap
+
+base theme: classy
+
+regions:
+  header: 'Header'
+  menu: 'Menu'
+  content: 'Main Content'
+  footer: 'Footer'
+  copyrightsocial: 'Copyright & Social Links'
+
+component-libraries:
+  styleguide:
+    paths:
+      - components

@@ -1,0 +1,23 @@
+{#
+/**
+ * Extending the base template for Drupal.
+ */
+#}
+{% extends "@styleguide/paragraphs/show-more.twig" %}
+{#
+/**
+ * Set variables.
+ */
+#}
+{%
+set attributes = attributes.addClass([
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+])
+%}
+{% set uniqueID = uuid %}
+{% set title = content.field_title %}
+{% set visibleText = content.field_text %}
+{% set hiddenText = content.field_hidden_text %}
+{% set isThereHiddenText = content.field_hidden_text|render %}

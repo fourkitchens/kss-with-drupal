@@ -1,0 +1,41 @@
+# Linter Options
+options:
+  merge-default-rules: false
+  formatter: stylish
+# File Options
+files:
+  include: 'sass/**/*.s+(a|c)ss'
+  ignore:
+    - 'sass/vendor/**/*.*'
+# Rule Configuration
+rules:
+  extends-before-mixins: 2
+  placeholder-in-extend: 2
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - breakpoint
+        - border-radius
+        - contrasted
+        - mq
+
+  no-warn: 1
+  no-debug: 1
+  no-ids: 2
+  no-important: 1
+  hex-notation:
+    - 2
+    -
+      style: uppercase
+  no-color-literals: 0
+  indentation:
+    - 1
+    - size: 2
+  property-sort-order:
+    - 1
+    -
+      order:
+        - display
+        - margin
+      ignore-custom-properties: true

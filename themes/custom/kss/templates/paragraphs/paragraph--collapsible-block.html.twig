@@ -1,0 +1,23 @@
+{#
+/**
+ * Extending the base template for Drupal.
+ */
+#}
+{% extends "@styleguide/paragraphs/collapsible-block.twig" %}
+{#
+/**
+ * Define attach region.
+ */
+#}
+{% block attach %}
+  {{ attach_library('nyuwagner/bootstrap') }}
+  {{ attach_library('nyuwagner/collapsableBlock') }}
+{% endblock %}
+{#
+/**
+ * Set variables.
+ */
+#}
+{% set contentTitle = content.field_title %}
+{% set contentBody = content.field_text %}
+{% set uniqueID = uuid %}

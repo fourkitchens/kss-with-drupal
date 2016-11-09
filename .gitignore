@@ -1,0 +1,18 @@
+# General
+.DS_Store
+.idea
+*.iml
+*.log
+*.tgz
+*.gz
+
+# Theme
+themes/custom/kss/dist/*
+!themes/custom/kss/dist/.gitkeep
+local.gulp-config.js
+themes/custom/kss/styleguide
+!themes/custom/kss/styleguide/.gitkeep
+
+# node.js
+npm-debug.log
+node_modules

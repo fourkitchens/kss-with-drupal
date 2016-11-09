@@ -1,0 +1,34 @@
+//  Paragraph Styles
+//
+//  These are the styles for the variety of paragraph styles that can be added to a node.
+//
+//  Weight: 0
+//
+//  Style guide: styles
+
+@import 'toolkit';
+@import 'breakpoint';
+@import 'singularitygs';
+@import 'drupal-sass-breakpoints';
+
+@import 'global/mixins';
+@import 'global/variables';
+
+* {
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+@import 'global/typography';
+@import 'components/buttons/_buttons.scss';
+@import 'components/paragraphs/_blockquotes.scss';
+@import 'components/paragraphs/_p--admission-step.scss';
+@import 'components/paragraphs/_p--collapsible-block.scss';
+@import 'components/paragraphs/_paragraph--callout.scss';
+@import 'components/paragraphs/_paragraph--show-more.scss';
+@import 'components/_card-promo--triptych.scss';
+@import 'components/_card-promo.scss';
+@import 'components/_component-animations.scss';
