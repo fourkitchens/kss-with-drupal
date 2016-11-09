@@ -1,5 +1,7 @@
 # KSS + Drupal = Dynamic Style Guides
 
+This repo is a companion to [Frontend Style Guide Miniseries: Part Two: KSS](https://www.fourkitchens.com/blog/article/frontend-style-guide-miniseries-part-two-kss)
+
 ![KSS Drupal](https://github.com/fourkitchens/kss-with-drupal/raw/master/themes/custom/kss/img/kss-graphic.jpg)
 
 ## Requirements
